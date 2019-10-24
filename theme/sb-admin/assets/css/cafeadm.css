@@ -1,0 +1,143 @@
+/*TinyMCE UPLOAD*/
+
+.mce_upload {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--index-modal);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.mce_upload_box {
+    margin: auto;
+    width: 400px;
+    max-width: 90%;
+    background: #FFFFFF;
+    padding: 30px;
+    text-align: center;
+
+    -webkit-border-radius: var(--radius-normal);
+    -moz-border-radius: var(--radius-normal);
+    border-radius: var(--radius-normal);
+}
+
+.mce_upload_box label.legend {
+    margin-bottom: 15px;
+}
+
+.mce_upload_box .btn {
+    width: 100%;
+}
+
+/*MESSAGES*/
+
+.message {
+    color: #ffffff;
+    font-size: var(--font-normal);
+    font-weight: var(--weight-strong);
+
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #cccccc;
+    margin-bottom: var(--area-box);
+
+    -webkit-border-radius: var(--radius-normal);
+    -moz-border-radius: var(--radius-normal);
+    border-radius: var(--radius-normal);
+}
+
+.message.success {
+    --color: var(--color-green);
+    color: var(--color);
+    border-color: var(--color);
+}
+
+.message.info {
+    --color: var(--color-blue);
+    color: var(--color);
+    border-color: var(--color);
+}
+
+.message.warning {
+    --color: var(--color-yellow);
+    color: var(--color);
+    border-color: var(--color);
+}
+
+.message.error {
+    --color: var(--color-red);
+    color: var(--color);
+    border-color: var(--color);
+}
+
+/*AJAX RESPONSES MESSAGES*/
+
+.ajax_response {
+    position: fixed;
+    padding: 20px 20px 0 0;
+    z-index: 998;
+
+    top: 0;
+    right: 0;
+    width: 300px;
+    max-width: 100%;
+}
+
+.ajax_response .message {
+    color: #ffffff;
+    font-size: var(--font-min);
+    font-weight: var(--weight-normal);
+    overflow: hidden;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 15px 20px 15px;
+    background: #333333;
+    margin-bottom: 15px;
+    position: relative;
+
+    -webkit-border-radius: var(--radius-normal);
+    -moz-border-radius: var(--radius-normal);
+    border-radius: var(--radius-normal);
+
+    cursor: pointer;
+}
+
+.ajax_response .message:before {
+    flex-basis: 0;
+    margin: -5px 15px 0 0 !important;
+    font-size: calc(var(--font-max) * 1.2);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ajax_response .message_time {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 4%;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.ajax_response .message.success {
+    background: var(--color-green);
+}
+
+.ajax_response .message.info {
+    background: var(--color-blue);
+}
+
+.ajax_response .message.warning {
+    background: var(--color-yellow);
+}
+
+.ajax_response .message.error {
+    background: var(--color-red);
+}

@@ -1,0 +1,15 @@
+/**
+ * ALERTS
+ */
+define("CONF_ALERT_MESSAGE", "alert");
+define("CONF_ALERT_SUCCESS", ["class" => "alert-success", "icon" => "fas fa-fw fa-check-circle"]);
+define("CONF_ALERT_DANGER", ["class" => "alert-danger", "icon" => "fas fa-fw fa-times-circle"]);
+define("CONF_ALERT_WARNING", ["class" => "alert-warning", "icon" => "fas fa-fw fa-exclamation-circle"]);
+define("CONF_ALERT_INFO", ["class" => "alert-info", "icon" => "fas fa-fw fa-info-circle"]);
+
+/**
+ * IMAGES
+ */
+define("CONF_IMAGE_DEFAULT_AVATAR", "/assets/images/webp/default-avatar.webp");
+define("CONF_IMAGE_NO_AVAILABLE_1BY1", "/assets/images/webp/no-image-available-1by1.webp");
+define("CONF_IMAGE_NO_AVAILABLE_16BY9", "/assets/images/webp/no-image-available-16by9.webp");

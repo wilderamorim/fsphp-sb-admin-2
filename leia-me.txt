@@ -1,0 +1,9 @@
+﻿Adicionar as dependências listadas no (package.json) ou colar o mesmo na pasta raiz do projeto e rodar 'npm update' no terminal.
+
+Colar o arquivo do minify (Admin.php) e fazer inclusão no (composer.json) e executar 'composer update' via terminal.
+
+Adicionar as funções helpers e as constantes em seu projeto.
+Obs.: as funções photo_img() e photo_scr() devem fica abaixo da função nativa do projeto image().
+
+Colar a pasta webp no seu tema principal do site (themes/cafeweb/assets/images/webp/...).
+Caso queria colar no tema admin precisará alterar as funções helpers photo_img() e photo_src().

@@ -1,0 +1,40 @@
+/*DEFAULT PAGINATOR*/
+
+.paginator {
+    margin: 30px 0;
+    text-align: right;
+}
+
+.paginator a, .paginator span {
+    display: inline-block;
+    padding: .5rem .75rem;
+    border: 1px solid #dddfeb;
+    border-right: 0;
+    color: var(--primary);
+    text-decoration: none !important;
+    transition-duration: 0.2s;
+    background-color: #FFF;
+}
+
+.paginator a:first-of-type {
+    -webkit-border-radius: var(--radius-normal) 0 0 var(--radius-normal);
+    -moz-border-radius: var(--radius-normal) 0 0 var(--radius-normal);
+    border-radius: var(--radius-normal) 0 0 var(--radius-normal);
+}
+
+.paginator a:last-of-type {
+    border-right: 1px solid #dddfeb;
+    -webkit-border-radius: 0 var(--radius-normal) var(--radius-normal) 0;
+    -moz-border-radius: 0 var(--radius-normal) var(--radius-normal) 0;
+    border-radius: 0 var(--radius-normal) var(--radius-normal) 0;
+}
+
+.paginator a:hover {
+    background: #EAECF4;
+    background-size: 200%;
+}
+
+.paginator span {
+    color: #FFF;
+    background: var(--primary);
+}

@@ -1,0 +1,106 @@
+/**
+ * @param string|null $image
+ * @param string $alt
+ * @param int $width
+ * @param int|null $height
+ * @param string|null $defaultImage
+ * @param string|null $class
+ * @param string|null $style
+ * @return string
+ */
+function photo_img(
+    ?string $image,
+    string $alt,
+    int $width,
+    int $height = null,
+    string $defaultImage = null,
+    string $class = null,
+    string $style = null
+): string {
+    $defaultImage = (!empty($defaultImage) ? $defaultImage : CONF_IMAGE_NO_AVAILABLE_16BY9);
+    $class = (!empty($class) ? ' class="' . $class . '"' : null);
+    $style = (!empty($style) ? ' style="' . $style . '"' : null);
+    $image = (!empty($image) ? image($image, $width, $height) : theme($defaultImage));
+
+    return '<img src="' . $image . '" alt="' . $alt . '"' . $class . $style . '>';
+}
+
+/**
+ * @param string|null $image
+ * @param int $width
+ * @param int|null $height
+ * @param string|null $defaultImage
+ * @return string
+ */
+function photo_scr(?string $image, int $width, int $height = null, string $defaultImage = null): string
+{
+    $defaultImage = (!empty($defaultImage) ? $defaultImage : CONF_IMAGE_NO_AVAILABLE_16BY9);
+    $image = (!empty($image) ? image($image, $width, $height) : theme($defaultImage));
+    return $image;
+}
+
+/**
+ * #################
+ * ###   ALERT   ###
+ * #################
+ */
+
+/**
+ * @param string $message
+ * @param string|null $class
+ * @param string|null $style
+ * @param string $htmlTag
+ * @return string
+ */
+function alert_success(string $message, string $class = null, string $style = null, string $htmlTag = "div"): string
+{
+    $class = CONF_ALERT_MESSAGE . " " . CONF_ALERT_SUCCESS["class"] . (!empty($class) ? " {$class}" : null);
+    $icon = '<i class="' . CONF_ALERT_SUCCESS["icon"] . '"></i>';
+    $style = (!empty($style) ? ' style="' . $style . '"' : null);
+    return '<' . $htmlTag . ' class="' . $class . '" role="alert"' . $style . '>' . $icon . $message . '</' . $htmlTag . '>';
+}
+
+/**
+ * @param string $message
+ * @param string|null $class
+ * @param string|null $style
+ * @param string $htmlTag
+ * @return string
+ */
+function alert_danger(string $message, string $class = null, string $style = null, string $htmlTag = "div"): string
+{
+    $class = CONF_ALERT_MESSAGE . " " . CONF_ALERT_DANGER["class"] . (!empty($class) ? " {$class}" : null);
+    $icon = '<i class="' . CONF_ALERT_DANGER["icon"] . '"></i>';
+    $style = (!empty($style) ? ' style="' . $style . '"' : null);
+    return '<' . $htmlTag . ' class="' . $class . '" role="alert"' . $style . '>' . $icon . $message . '</' . $htmlTag . '>';
+}
+
+/**
+ * @param string $message
+ * @param string|null $class
+ * @param string|null $style
+ * @param string $htmlTag
+ * @return string
+ */
+function alert_warning(string $message, string $class = null, string $style = null, string $htmlTag = "div"): string
+{
+    $class = CONF_ALERT_MESSAGE . " " . CONF_ALERT_WARNING["class"] . (!empty($class) ? " {$class}" : null);
+    $icon = '<i class="' . CONF_ALERT_WARNING["icon"] . '"></i>';
+    $style = (!empty($style) ? ' style="' . $style . '"' : null);
+    return '<' . $htmlTag . ' class="' . $class . '" role="alert"' . $style . '>' . $icon . $message . '</' . $htmlTag . '>';
+}
+
+/**
+ * @param string $message
+ * @param string|null $class
+ * @param string|null $style
+ * @param string $htmlTag
+ * @return string
+ */
+function alert_info(string $message, string $class = null, string $style = null, string $htmlTag = "div"): string
+{
+    $class = CONF_ALERT_MESSAGE . " " . CONF_ALERT_INFO["class"] . (!empty($class) ? " {$class}" : null);
+    $icon = '<i class="' . CONF_ALERT_INFO["icon"] . '"></i>';
+    $style = (!empty($style) ? ' style="' . $style . '"' : null);
+    return '<' . $htmlTag . ' class="' . $class . '" role="alert"' . $style . '>' . $icon . $message . '</' . $htmlTag . '>';
+}
