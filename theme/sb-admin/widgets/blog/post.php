@@ -48,18 +48,6 @@
                 <input type="text" name="video"  id="video" placeholder="O ID de um vídeo do YouTube" class="form-control">
             </div>
 
-            <fieldset class="form-group d-none">
-                <legend class="col-form-label">Categorias</legend>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                    <input type="checkbox" name="category" id="category1" class="custom-control-input">
-                    <label class="custom-control-label" for="category1">Categoria 1</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                    <input type="checkbox" name="category" id="category2" class="custom-control-input">
-                    <label class="custom-control-label" for="category2">Categoria 2</label>
-                </div>
-            </fieldset>
-
             <div class="form-group">
                 <label for="content" class="required">Conteúdo</label>
                 <textarea name="content" id="content" class="mce"></textarea>
