@@ -7,6 +7,10 @@
 
 Um tema gratuito de administração do Bootstrap 4 para o CaféControl (CMS desenvolvido no curso Full Stack PHP Developer da [UpInside](https://github.com/UpInside)).
 
+## Preview
+
+![FSPHP Dashboard](https://www.upinside.com.br/uploads/community/2019/10/11509-upinsideforum1571937016.png)
+
 ## About SB Admin 2
 
 ###### [SB Admin 2](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2) is a free dashboard template developed by Start Bootstrap.
