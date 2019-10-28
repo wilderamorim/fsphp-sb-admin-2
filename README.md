@@ -9,7 +9,7 @@ Um tema gratuito de administração do Bootstrap 4 para o CaféControl (CMS dese
 
 ## About SB Admin 2
 
-###### [SB Admin 2](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2) é um modelo de administração gratuito desenvolvido pela Start Bootstrap.
+###### [SB Admin 2](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2) is a free dashboard template developed by Start Bootstrap.
 
 [SB Admin 2](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2) é um template de administração gratuito desenvolvido pela Start Bootstrap.
 
