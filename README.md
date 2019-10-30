@@ -46,5 +46,6 @@ Thank you
 ## Credits
 
 - [Wilder Amorim](https://github.com/WilderAmorim) (Developer)
+- [David Miller](https://github.com/blackrockdigital) (Developer)
 - [Robson V. Leite](https://github.com/robsonvleite) (Developer)
 - [All Contributors](https://github.com/WilderAmorim/fsphp-sb-admin-2/contributors) (This Rock)
