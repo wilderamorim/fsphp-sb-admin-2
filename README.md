@@ -1,6 +1,6 @@
 # SB Admin 2 @FSPHP
 
-[![Maintainer](http://img.shields.io/badge/maintainer-@WilderAmorim-blue.svg?style=flat-square)](https://twitter.com/WilderAmorim)
+[![Maintainer](http://img.shields.io/badge/maintainer-@Wilder-Amorim-blue.svg?style=flat-square)](https://twitter.com/WilderAmorim)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
 ###### A free Bootstrap 4 admin theme for CaféControl (CMS developed in Full Stack PHP Developer course of [UpInside](https://github.com/UpInside)).
